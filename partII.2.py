@@ -25,5 +25,5 @@ def permutation(alist, current_index= 0):
         #choices are exhausted now backtrack/swap back
         swap(alist, current_index, choice_index)
 
-permutation(["A","B","C"])
+permutation(['a', 'e', 'i', 'o', 'u'])
     
