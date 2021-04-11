@@ -4,7 +4,7 @@ sequence of continuous ones.
 https://www.techiedelight.com/find-index-0-replaced-get-maximum-length-sequence-of-continuous-ones/
 '''
 
-#Use sliding window approach
+
 #Helpful Notes
 '''
 1. Think more about the indexes of the list rather than the actual values
