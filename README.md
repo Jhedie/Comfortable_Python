@@ -1,3 +1,3 @@
-# W3resource_Python
+# Comfortable Python 
 
 Getting comfortable with python by solving problems
