@@ -14,10 +14,10 @@ https://www.techiedelight.com/find-index-0-replaced-get-maximum-length-sequence-
 '''
 def countMaxConsecutive_1s(an_array):
     max_ones = 0 #which stores the maximum number of ones
-    max_index = 0 # index of maximum number of ones
+    max_index = -1 # index of maximum number of ones
     
     counter = 0  # counts the number of 1s
-    prev_zero_index = 0 # assumes this is changed to a 1
+    prev_zero_index = -1 # assumes a zero is changed to a 1
 
     current_index = 0
     #traverse through the array
@@ -43,5 +43,7 @@ def countMaxConsecutive_1s(an_array):
     return max_index
 
     
-array = [0, 0, 1, 0, 1, 1, 1, 0, 1, 1 ]
-print(countMaxConsecutive_1s(array))
+array = [0, 0, 1, 0, 1, 1, 1, 0, 1, 1 ] # returns 7
+array2 = [0,1,1,1,1] #returns 0
+array3  = [1,1,1,1,1,1,1,1] #returns -1 
+print(countMaxConsecutive_1s(array2))
