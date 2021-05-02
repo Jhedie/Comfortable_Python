@@ -53,16 +53,17 @@ def min_missing_positive1(arr):
     pos_index_start = segregate(arr)
     #list of all positives
     seg_list = arr[pos_index_start:]
-
+    print(seg_list)
 
 
     for number in range(len(seg_list)):
         
         curr_value = abs(seg_list[number])
-        #first case checks whether the index of current element is in the list range
-        #second case checks if value at that index has not been negated yet
+        #first case checks whether current element is in the list range
+        #second case checks if value at position curr_value has not been negated yet
         if curr_value - 1 < len(seg_list) and seg_list[curr_value - 1] > 0:
             seg_list[curr_value-1] = -seg_list[curr_value-1]
+            print(seg_list)
 
     for i in range(len(seg_list)):
         if seg_list[i] > 0:
@@ -76,5 +77,6 @@ def min_missing_positive1(arr):
 
 
 test1 = [-1, 4, 2, -2, 6, 5]
+
 test2 = [-1,-2,-3,-4]
-print(min_missing_positive1(test2))
+print(min_missing_positive1(test1))
