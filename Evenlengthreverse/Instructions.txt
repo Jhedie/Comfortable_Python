@@ -1,0 +1,13 @@
+113. Write a Python program to reverse all the words which have even length. Go to the editor
+
+
+Sample Input:
+
+("The quick brown fox jumps over the lazy dog")
+("Python Exercises")
+
+
+Sample Output:
+
+The quick brown fox jumps revo the yzal dog
+nohtyP Exercises
